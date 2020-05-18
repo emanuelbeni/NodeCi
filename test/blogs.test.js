@@ -26,14 +26,6 @@ describe("When logged in", async () => {
 	// Nested describe when submitting valid input
 	describe("And using valid input", async () => {
 		beforeEach(async () => {
-			// await page.inputFormField(
-			// 	"input[name=title]",
-			// 	"Jest automated test 001 - Title"
-			// );
-			// await page.inputFormField(
-			// 	"input[name=content]",
-			// 	"Jest automated test 001 - Body"
-			// );
 			await page.type("input[name=title]", "Title");
 			await page.type("input[name=content]", "Content");
 
