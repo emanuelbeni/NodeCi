@@ -5,7 +5,7 @@ let page;
 beforeEach(async () => {
 	page = await Page.build();
 	await page.goto("localhost:3000");
-}, 30000);
+}, 90000);
 
 afterEach(async () => {
 	await page.close();
